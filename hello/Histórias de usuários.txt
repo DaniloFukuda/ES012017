@@ -50,4 +50,10 @@ Histórias de usuários
 
 9.
 
-	
+	Como administrador eu quero gerenciar o acesso de usuários.
+	Para definir o perfil de acesso do indivíduo.
+
+10. 
+
+	Como usuário eu quero anunciar mensagens em um mural de avisos virtual.
+	Para que eu consiga a colaboração e/ou atenção dos demais usuários.	
