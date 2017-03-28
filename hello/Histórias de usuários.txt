@@ -1,0 +1,53 @@
+Histórias de usuários
+
+1.
+
+	Como usuário eu quero acessar o sistema através de um método de autenticação.
+	Para garantir a segurança das informações disponibilizadas.
+
+
+2.
+
+	Como morador eu quero fazer a reserva do salão multiuso.
+	Para garantir a disponibilidade do espaço em uma data específica.
+
+
+3.
+
+	Como morador eu quero visualisar o relatório financeiro e o balanço do exercício.
+	Para exercer a fiscalização das contas do condomínio.
+
+
+4.
+
+	Como morador eu quero visualizar as minhas faturas das taxas condominiais.
+	Para controlar os pagamentos e confirmar as quitações já realizadas.
+
+
+5.
+
+	Como membro da administração eu quero cadastrar as despesas e receitas do mês.
+	Para gerenciar o controle fiscal das contas do condomínio.
+
+
+6.
+
+	Como funcionário eu quero cadastrar as correspondências dos moradores.
+	Para controlar a distribuição dos itens recebidos.
+
+
+7. 
+
+	Como membro do conselho fiscal eu quero validar as contas prestadas pela administração.
+	Para garantir a gestão efetiva dos recursos financeiros do condomínio.
+
+
+8.
+
+	Como usuário eu quero receber uma notificação de correspondência recebida.
+	Para poder proceder no recebimento do item.
+
+
+9.
+
+	
