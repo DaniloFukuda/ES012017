@@ -13,6 +13,8 @@ import test.views
 urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
     url(r'^db', hello.views.db, name='db'),
+	url(r'^base', hello.views.base, name='base'),
+	url(r'^salao', hello.views.salao, name='salao'),
     url(r'^admin/', include(admin.site.urls)),
 	url(r'^test', test.views.index, name='index'),
 ]

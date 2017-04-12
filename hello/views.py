@@ -23,4 +23,10 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, 'db.html', {'greetings': greetings})
+	
+def base(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, 'base.html')
 
+def salao(request):
+	return render(request, 'salao.html')

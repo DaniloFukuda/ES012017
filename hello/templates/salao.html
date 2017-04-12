@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="container">
+
+
+<h2>Agendar Salão</h2>
+
+
+<div class="row">
+    <div class="col-md-8">
+      <h3><span class="glyphicon glyphicon-calendar"></span> Calendário</h3>
+      <table class="table table-bordered" style="table-layout:fixed;word-wrap:break-word;">
+    <thead>
+      <tr>
+		<th>Horário</th>
+        <th>Domingo</th>
+        <th>Segunda</th>
+        <th>Terça</th>
+		<th>Quarta</th>
+		<th>Quinta</th>
+		<th>Sexta</th>
+		<th>Sabado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		<th>Manhã</th>
+        <td>	</td>
+        <td>	</td>
+        <td>	</td>
+		<td>	</td>
+		<td>	</td>
+		<td>	</td>
+		<td>	</td>
+      </tr>
+      <tr>
+        <th>Tarde</th>
+        <td>	</td>
+        <td>	</td>
+        <td>	</td>
+		<td>	</td>
+		<td>	</td>
+		<td>	</td>
+		<td>	</td>
+      </tr>
+      <tr>
+        <th>Noite</th>
+        <td>	</td>
+        <td>	</td>
+        <td>	</td>
+		<td>	</td>
+		<td>Maria(209)</td>
+		<td>	</td>
+		<td>João(102)</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    <div class="col-md-3">
+      <h3><span class="glyphicon glyphicon-link"></span> Novo evento</h3>
+	  <form>
+	  <!--
+		<div class="form-group">
+			<label for="email">Email address:</label>
+			<input type="email" class="form-control" id="email">
+		</div>
+		<div class="form-group">
+			<label for="pwd">Password:</label>
+			<input type="password" class="form-control" id="pwd">
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox"> Remember me</label>
+		</div>
+		-->
+		<div class="form-group">
+			<label for="qualSalao">Local:</label>
+			<select class="form-control" id="sel1">
+				<option value="" selected disabled>Selecione</option>
+				<option value="sf1">Salão de Festa 1</option>
+				<option value="sf2">Salão de Festa 2</option>
+				<option value="ch1">Churrasqueira</option>
+				<option value="se1">Sala de Estudos</option>
+			</select>
+		</div>
+	    <div class="form-group"> <!-- Date input -->
+			<label class="control-label" for="date">Data:</label>
+			<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+		</div>
+		<div class="form-group">
+			<label for="turno">Turno:</label>
+			<label class="radio-inline"><input type="radio" name="optradio">Manhã</label>
+			<label class="radio-inline"><input type="radio" name="optradio">Tarde</label>
+			<label class="radio-inline"><input type="radio" name="optradio">Noite</label>
+		</div>
+		<div class="well well-sm">Taxa: <span id="txSalao"></></div>
+		  <button type="submit" class="btn btn-default">Solicitar</button>
+		</form>
+
+    </div>
+  </div> <!-- row -->
+
+</div>
+<script>
+	$("#sel1").change(function(){
+		var sel1_input = $("#sel1").val();
+		var txSalao;
+		switch(sel1_input) {
+		case "sf1": 
+			txSalao = "R$300,00";
+			break;
+		case "sf2": 
+			txSalao = "Gratuito";
+			break;
+		case "ch1": 
+			txSalao = "R$100,00";
+			break;
+		case "se1": 
+			txSalao = "R$800,00";
+			break;
+		default:
+			txSalao = "-";
+		}
+		
+		$("#txSalao").text(txSalao);
+		})
+  </script>
+
+{% endblock %}
