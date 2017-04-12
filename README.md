@@ -1,6 +1,6 @@
 # Teste Heroku Django
 
-Foi gerado uma aplicação de teste segundo o [Tutorial do Herokuj](https://devcenter.heroku.com/articles/getting-started-with-python#introduction)
+Foi gerado uma aplicação de teste segundo o [Tutorial do Heroku](https://devcenter.heroku.com/articles/getting-started-with-python#introduction)
 
 ## Aplicação atual
 
